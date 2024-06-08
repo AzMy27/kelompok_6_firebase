@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "167981569123",
+    "project_id": "flutterfireprojek",
+    "storage_bucket": "flutterfireprojek.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167981569123:android:97392f85f56bc98845d456",
+        "android_client_info": {
+          "package_name": "com.example.tugas_kelompok"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMqv-LtCpAtfG-b4HrBawX_ZLH0Efdmss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
