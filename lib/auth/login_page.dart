@@ -129,7 +129,7 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(height: 25.0),
 
               // Register
-              Column(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
@@ -139,7 +139,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                   Text(
-                    'Register Now',
+                    ' Register Now',
                     style: TextStyle(
                       color: Colors.blue,
                       fontWeight: FontWeight.bold,
