@@ -1,10 +1,14 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 // import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+  final VoidCallback showRegisterPage;
+  const LoginPage({Key? key, required this.showRegisterPage}) : super(key: key);
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -46,13 +50,15 @@ class _LoginPageState extends State<LoginPage> {
                 height: 75,
               ),
               Text(
-                'Halo Halo',
-                style: GoogleFonts.bebasNeue(),
+                'Hello Again',
+                style: GoogleFonts.bebasNeue(
+                  fontSize: 48,
+                ),
               ),
               SizedBox(
                 height: 10,
               ),
-              Text('Selamat Datang'),
+              Text('Welcome Back'),
               SizedBox(
                 height: 10.0,
               ),
@@ -72,7 +78,7 @@ class _LoginPageState extends State<LoginPage> {
                       borderRadius: BorderRadius.circular(12.0),
                     ),
                     hintText: 'Email',
-                    fillColor: Colors.grey[300],
+                    fillColor: Colors.grey[100],
                     filled: true,
                   ),
                 ),
@@ -95,7 +101,7 @@ class _LoginPageState extends State<LoginPage> {
                       borderRadius: BorderRadius.circular(12.0),
                     ),
                     hintText: 'Password',
-                    fillColor: Colors.grey[300],
+                    fillColor: Colors.grey[100],
                     filled: true,
                   ),
                 ),
@@ -138,11 +144,14 @@ class _LoginPageState extends State<LoginPage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Text(
-                    ' Register Now',
-                    style: TextStyle(
-                      color: Colors.blue,
-                      fontWeight: FontWeight.bold,
+                  GestureDetector(
+                    onTap: widget.showRegisterPage,
+                    child: Text(
+                      ' Register Now',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   )
                 ],
@@ -157,7 +166,7 @@ class _LoginPageState extends State<LoginPage> {
                       color: Colors.blue,
                       fontWeight: FontWeight.bold,
                     ),
-                  )
+                  ),
                 ],
               ),
             ],

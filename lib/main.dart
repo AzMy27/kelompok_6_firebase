@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 // import 'package:tugas_kelompok/auth/login_page.dart';
 import 'package:tugas_kelompok/firebase/firebase_options.dart';
 // import 'package:tugas_kelompok/ui/home_page.dart';
-import 'package:tugas_kelompok/ui/main_page.dart';
+import 'package:tugas_kelompok/auth/main_page.dart';
 // import 'package:tugas_kelompok/test_firestore.dart';
 
 void main() async {
