@@ -101,6 +101,17 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
               SizedBox(height: 10.0),
+              Row(
+                children: [
+                  Text(
+                    'Forget Password',
+                    style: TextStyle(
+                      color: Colors.blue,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  )
+                ],
+              ),
 
               // Sign In Button
               Padding(
