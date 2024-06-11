@@ -22,18 +22,18 @@ class _fireStoreState extends State<fireStore> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Aplikasi'),
-      ),
+      // appBar: AppBar(
+      //   title: Text('Aplikasi'),
+      // ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Beranda',
+            label: 'Home',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.shopping_cart),
-            label: 'Belanja',
+            label: 'Shop',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),

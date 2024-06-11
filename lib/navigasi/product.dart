@@ -18,6 +18,9 @@ class _ProdukState extends State<Produk> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Shopping'),
+      ),
       body: StreamBuilder<QuerySnapshot>(
         stream: db.collection('users').snapshots(),
         builder: (context, snapshots) {
